@@ -1,0 +1,223 @@
+<!DOCTYPE HTML>
+<!--
+	Introspect by TEMPLATED
+	templated.co @templatedco
+	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
+-->
+<html>
+	<head>
+		<title>Javascript Editor | coding.web.id</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		
+<link href="https://fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet">
+		
+<style>
+textarea{
+    background: url(assets/no.png);
+background-attachment: local;
+background-repeat: no-repeat;
+padding-left: 35px;
+
+    border-color:#ccc;
+	font-family: 'Source Code Pro', monospace;
+	 font-size: 14px; line-height: 120%;
+}
+</style>		
+
+<link href='https://fonts.googleapis.com/css?family=Patua One' rel='stylesheet'>
+<link href='https://fonts.googleapis.com/css?family=Zilla Slab' rel='stylesheet'>
+<style>
+h {
+    font-family: 'Patua One';font-size: 40px;
+	padding-top: 22px;
+	color: #eeeeee;
+}
+
+body {
+font-family: 'Zilla Slab';
+}
+</style>		
+	</head>
+	<body>
+
+		<!-- Header -->
+			<header id="header">
+				<div class="inner">
+					<a href="index.html" class="logo"><img src="assets/codingl2.png"></a>
+					<nav id="nav">
+						<a href="index.html">Home</a>
+						<a href="help.html">Help</a>
+						
+					</nav>
+				</div>
+			</header>
+
+			<a href="#menu" class="navPanelToggle"><span class="fa fa-bars"></span></a>
+
+
+		<!-- One -->
+		<div id="hasil">
+			<section id="one">
+				<div class="inner">
+					<header>
+						<h2>Javascript P5.JS</h2>
+					</header><!--
+					<p>Untuk menggunakan tool ini tuliskan kode Javascript pada bagian <b>KODE PROGRAM</b> dan jalankan program tersebut dengan mengeklik tombol <b>RUN CODE</b>. Hasil eksekusi program akan tampil di jendela di sebelah kanan pada <b>TAMPILAN HASIL EKSEKUSI</b>. </p>
+					<p>Untuk menjalankan secara terpisah, Anda harus menyimpan kode program dalam file dengan format/ekstensi "<b>.html</b>". Untuk menjalankan file ini silahkan klik dua kali pada nama file, atau dibuka langsung melalui web browser.</p>
+					<ul class="actions">
+						<li><a href="#code" class="button alt">Mulai Koding!</a></li>
+					</ul>-->
+					<div class="image fit">
+							<form>
+							<div class="image fit">
+							<textarea  name="sourceCode1" id="sourceCode1" style="display:none;"><!DOCTYPE html>
+<html lang=''>
+  <head>
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+
+    <script src='./lib/p5.min.js'></script>
+    <script src='./addons/p5.dom.min.js'></script>
+    <script src='./addons/p5.sound.min.js'></script>
+    <script src='./lib/sketch.js'></script>
+
+	</head>
+  <body><script></textarea>
+  <textarea  name="sourceCode2" id="sourceCode2" style="display:none;"></script></body></html></textarea>
+  
+  <table><tr><td width="45%" rowspan="2" style="text-align:left;vertical-align:top;padding:1">
+ <textarea  name="sourceCode" id="sourceCode" 
+				style="width:100%;height:500px;border-color: #CBC9C9;border:1px dotted grey;">function setup() { 
+  createCanvas(400, 400);
+  timer = 1
+} 
+
+function draw() { 
+  background(220);
+  textAlign(CENTER, CENTER);
+  textSize(100);
+  text(timer, width/2, height/2);
+  
+  
+  if (frameCount % 160 == 0 && timer > 0) 
+{ timer ++;}
+  
+}
+</textarea>
+<a href="#hasil" class="button special icon fa-play-circle" onclick='runCode();'>Run Code</a>
+							<a href="#code" class="button icon fa-download" onclick='doDL(document.getElementById("sourceCode1").value+document.getElementById("sourceCode").value+document.getElementById("sourceCode2").value)'>Download Code</a>
+							<!--<a href="#code" id="toggle"class="button icon fa-eye-slash" onclick='document.getElementById("scode").style.display="none"'>Hide Editor</a>-->
+						
+</td>
+<td rowspan="2" style="text-align:left;vertical-align:top;padding:0" width="55%">
+
+
+								<iframe name="targetCode" id="targetCode" style="width:100%;height:550px;border:0px dotted grey;"></iframe>
+							
+							</td></tr></table>
+							</div>
+							</div>
+							
+							
+						</form>
+										
+				</div>
+			</section>
+			</div>
+
+		<!-- Two -->
+		<div id="code"></div>
+		
+			<section id="">
+				<div class="inner" >
+					<article id="scode">
+						<div class="content">
+							<header >
+								<h3>Kode Program</h3>
+								
+								
+							</header>
+							<center>
+
+						
+
+							
+						</div>
+						<br>
+					</article>
+					
+					<!--
+					<article class="alt">
+						<div class="content">
+							<header>
+								<h3>Hasil</h3>
+								<a href="#" class="button" >Tampilan Hasil Eksekusi</a>
+							</header>
+							<div class="image fit">
+								<iframe name="targetCode" id="targetCode" style="width:100%;height:350px;border:1px dotted grey;"></iframe>
+							</div>
+							<a href="#code" id="toggle"class="button icon fa-eye" onclick='show()'>Show Editor</a>
+
+							
+						</div>
+					</article>
+					-->
+				</div>
+			</section>
+			</center>
+
+	
+		<!-- Footer -->
+			<section id="footer">
+				<div class="inner">
+					<div class="">
+						&copy; Design: <a href="https://templated.co/">Templated</a>. By <a href="https://teknologipembelajaran.com/">Teknologi Pembelajaran</a>
+					</div>
+				</div>
+			</section>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+						<script type="text/javascript">
+						
+            function runCode()
+            {
+				var content = document.getElementById('sourceCode1').value+document.getElementById('sourceCode').value +  document.getElementById('sourceCode2').value;
+				console.log(content);
+                var iframe = document.getElementById('targetCode');
+                iframe = (iframe.contentWindow) ? iframe.contentWindow : (iframe.contentDocument.document) ? iframe.contentDocument.document : iframe.contentDocument;
+                iframe.document.open();
+                iframe.document.write(content);
+                iframe.document.close();
+				//document.getElementById("scode").style.display="none";
+				 document.getElementById("hasil").style.display="block";
+                return false;
+            }
+            runCode();
+			//document.getElementById("hasil").style.display="none";
+        </script>
+
+<script type='text/javascript'>
+
+		
+function doDL(s){
+    function dataUrl(data) {return "data:x-application/text," + escape(data);}
+    window.open(dataUrl(s));
+}
+
+function hide(){
+ document.getElementById("scode").style.display="none";
+ }
+function show(){
+ document.getElementById("scode").style.display="block";
+ document.location.hash="#code";
+ }
+</script>
+		
+</body>
+</html>
